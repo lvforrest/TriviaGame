@@ -1,0 +1,87 @@
+body{
+    background-color: yellow;
+}
+.grid{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid green;
+    box-shadow: 10px 15px 5px;
+
+}
+.grid h1{
+    background-color: gold;
+    font-family:'Berkshire Swash', cursive;
+    font-size: 60px;
+    color: blue;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+.title{
+    font-family:'Berkshire Swash', cursive;
+    font-size: 36px;
+    color: hotpink;
+    text-align: center;
+
+}
+
+h2{
+    font-family:'Berkshire Swash', cursive;
+    font-size: 30px;
+    color:gold;
+    align-content: center;
+    
+}
+.buttons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#btn0, #btn1, #btn2, #btn3{
+    background-color: rebeccapurple;
+    width: 250px;
+    font-family:'Berkshire Swash', cursive;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 20px 40px 20px 0px;
+    padding:20px 20px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover{
+    cursor: pointer;
+    background-color:yellow;
+}
+.next-btn{
+    font-family:'Berkshire Swash', cursive;
+	border: none;
+	outline: none;
+	background: rgba(255, 25, 255, 0.5);
+	width: 100px;
+	height: 35px;
+	border-radius: 20px;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+}
+
+.next-btn:hover{
+	background: #08038C;
+	color: #f6f6f6;
+}
+.board{
+    display: block
+}
+#results{
+    height: 100px;
+    text-align: center;
+    font-family:'Berkshire Swash', cursive; 
+	font-size: 75px;
+    color:yellowgreen;
+    margin-bottom: 40px;
+    display:none;
+
+}
