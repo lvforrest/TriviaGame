@@ -1,4 +1,3 @@
-var usePick;
 var timer;
 var currentQuestion;
 var score=0;
@@ -6,7 +5,7 @@ var question;
 var totalQuestions;
 var wrong;
 var right;
-
+var answerChoice;
 
 var gameQuestions =[{
 
@@ -36,7 +35,7 @@ var gameQuestions =[{
         answer: 1
     },
     {
-        question: "Go home Roger! is famous line from what show",
+        question: "Go home Roger!",
         answerChoice:[ "Madlock", "Seinfield", "Martin", "Sister Sister"],
         answer: 3
 }];
@@ -47,40 +46,50 @@ function startGame(){
     $('.board').empty();
     $('.answer').on("click");
     $('#nextButton').on('click', newQuestion);
-    $('.buttons .answer').on('click', guess)
+    $('.buttons .answer').on('click', guess);
 
     question = gameQuestions.slice();
-    totalQuestions =gameQuestions.length();
+    totalQuestions =gameQuestions.length;
+    console.log(gameQuestions);
     wrong = 0;
     right= 0;
 
 
 }
 function newQuestion(){
+        console.log(newQuestion);
         if(wrong + right >= totalQuestions){
             gameEnds();
+            
         } else {
         var question = Math.floor(Math.random() * gameQuestions.length);
-        currentQuestion =gameQuestions[questionNumber];
-        gameQuestions.splice(questionNumber, 1);
-        resetTimer();
-        $('#questions').html(gameQuestions.question);
-        $('.answer').show().find(".answer").each(function(i){
-            $(this).html(currentQuestion.answer[i]);
+            console.log(question);
+        currentQuestion = gameQuestions[question];
+        gameQuestions.slice(question, 1);
+        // resetTimer();
+        $('#questions').html(currentQuestion.question); 
+        $('.answer').each(function(i){
+            $(this).html(currentQuestion.answerChoice[i]);
+            console.log (currentQuestion.answerChoice[i]);
         });
-        timer =setInterval(showTimer, 1000);
+        // timer =setInterval(showTimer, 1000);
     }
+
 }
 function guess(){
-    if($(this).data("answer") == currentQuestion.answerChoice) {
-        right++;
-        score+=5;
-    } else {
+    if (currentQuestion.answerChoice[currentQuestion.answer] == currentQuestion.answerChoice.answer){
+            $()
+        console.log(currentQuestion.answerChoice[currentQuestion.answer]);
+        console.log($(this).text());
+    }  else {
         wrong++;
         score--;
     }
 }
 
+// didn't get to make my timer, but the idea was to give the user x amount seconds per question and to alert them when time is up
+// wanted to display a score table, results and reveal the timer
+// wanted to incremnt the score as well as update the right/wrong answer count
 
 
 

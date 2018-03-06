@@ -3,7 +3,7 @@ body{
 }
 .grid{
     width: 600px;
-    height: 600px;
+    height:500px;
     margin: 0 auto;
     background-color: white;
     padding: 10px 50px 50px 50px;
@@ -22,7 +22,7 @@ body{
 }
 .title{
     font-family:'Berkshire Swash', cursive;
-    font-size: 36px;
+    font-size: 40px;
     color: hotpink;
     text-align: center;
 
@@ -31,21 +31,26 @@ body{
 h2{
     font-family:'Berkshire Swash', cursive;
     font-size: 30px;
-    color:gold;
-    align-content: center;
+    color:rebeccapurple;
     
+    
+}
+#questions{
+    font-family:'Berkshire Swash', cursive;
+    font-size: 25px;
+    text-align: center
 }
 .buttons{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-#btn0, #btn1, #btn2, #btn3{
+ #btn0, #btn1, #btn2, #btn3{
     background-color: rebeccapurple;
-    width: 250px;
+    width: 255px;
     font-family:'Berkshire Swash', cursive;
     font-size: 20px;
     color: black;
-    border: 1px solid black;
+    border:3px solid black;
     border-radius: 50px;
     margin: 20px 40px 20px 0px;
     padding:20px 20px;
@@ -59,7 +64,7 @@ h2{
     font-family:'Berkshire Swash', cursive;
 	border: none;
 	outline: none;
-	background: rgba(255, 25, 255, 0.5);
+	background: hotpink;
 	width: 100px;
 	height: 35px;
 	border-radius: 20px;
@@ -81,7 +86,9 @@ h2{
     font-family:'Berkshire Swash', cursive; 
 	font-size: 75px;
     color:yellowgreen;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display:none;
 
 }
+
+background-image: url("https://www.pace.edu/sites/default/files/styles/t32_in_article_734x400/public/50-days-and-50-nights-week-of-april%2010.jpg?itok=KezlybBa");
